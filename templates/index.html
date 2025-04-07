@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h2>Welcome to My Flask App Rendering</h2>
+    <p>Discover My App Flask.</p>
+    <a href="{{ url_for('about') }}" class="btn">Learn More</a>
+</section>
+
+<section class="features">
+    <div class="feature-card">
+        <h3>Install Flask</h3>
+        <p>pip install flask</p>
+    </div>
+    <div class="feature-card">
+        <h3>Install Gunicorn</h3>
+        <p>pip install gunicorn</p>
+    </div>
+    <div class="feature-card">
+        <h3>Requirements.txt</h3>
+        <p>pip freeze > requirments.txt</p>
+    </div>
+        <div class="feature-card">
+        <h3>Init</h3>
+        <p>git init</p>
+    </div>
+        <div class="feature-card">
+        <h3>Add</h3>
+        <p>git add . </p>
+    </div>
+        <div class="feature-card">
+        <h3>commit</h3>
+        <p>git commit -m "first commit"</p>
+    </div>
+        <div class="feature-card">
+        <h3>branch</h3>
+        <p>git branch -M main</p>
+    </div>    <div class="feature-card">
+        <h3>Paste origin link</h3>
+        <p>(link)</p>
+    </div>
+        <div class="feature-card">
+        <h3>Origin Main</h3>
+        <p>git push -u origin main</p>
+    </div>
+
+</section>
+{% endblock %}
